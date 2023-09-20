@@ -1,12 +1,12 @@
 import React from "react";
-import notFound from "../../../public/assets/imgs/not_found.png";
+// import notFound from "../../../public/assets/imgs/not_found.png";
 
 const NotFound = () => {
   return (
     <section className="h-[100%] px-[30px] flex items-center justify-center">
       <div className="flex flex-col items-center justify-center">
         <img
-          src={notFound}
+          src="/assets/imgs/not_found.png"
           alt="search not found"
           className="md:w-[550px] sm:w-[400px] w-[250px]"
         />

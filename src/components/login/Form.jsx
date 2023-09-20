@@ -3,7 +3,7 @@ import clsx from "clsx";
 import { auth } from "../../../firebase.config";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faEye, faEyeSlash, } from "@fortawesome/free-regular-svg-icons";
+import { faUser, faEye, faEyeSlash } from "@fortawesome/free-regular-svg-icons";
 
 const Form = () => {
   const [password, setPassword] = useState("");
@@ -20,10 +20,7 @@ const Form = () => {
     // prevent default browser behaviour
     e.preventDefault();
 
-    if (
-      password === defaultPassword &&
-      userName === DefaultUserName
-    ) {
+    if (password === defaultPassword && userName === DefaultUserName) {
       navigate("/gallery");
     } else {
       alert("wrong username or password");
@@ -31,11 +28,11 @@ const Form = () => {
     }
 
     // if(userName && password){
-      
+
     //   setIsLoggedIn(true)
     // }
-    setUserName('')
-    setPassword('')
+    setUserName("");
+    setPassword("");
   };
   return (
     <main>
